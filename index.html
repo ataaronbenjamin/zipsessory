@@ -8,67 +8,7 @@
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 :root { --pink: #FF2D6B; --black: #080808; --card: #141414; --card2: #1E1E1E; --white: #FFFFFF; --muted: rgba(255,255,255,0.52); --serif: 'Cormorant Garamond', Georgia, serif; --sans: 'Jost', sans-serif; }
-body { background: var(--black); color: var(--white); font-family: var(--sans); font-weight: 300; max-width: 680px; margin: 0 auto; padding: 0 1.5rem; }
-.logo-bar { text-align: center; padding: 2.75rem 0 2rem; border-bottom: 1px solid rgba(255,45,107,0.18); }
-.logo { font-family: var(--serif); font-style: italic; font-weight: 300; font-size: 2.2rem; letter-spacing: 0.12em; }
-.logo em { color: var(--pink); font-style: inherit; }
-.tagline { font-size: 0.7rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--muted); margin-top: 0.4rem; }
-.hero { text-align: center; padding: 3.5rem 1rem 3rem; }
-.hero-label { display: inline-flex; align-items: center; gap: 0.65rem; font-size: 0.6rem; letter-spacing: 0.35em; text-transform: uppercase; color: var(--pink); margin-bottom: 1.5rem; }
-.hero-label::before, .hero-label::after { content: ''; width: 24px; height: 1px; background: var(--pink); }
-.hero h1 { font-family: var(--serif); font-weight: 300; font-style: italic; font-size: clamp(2.4rem, 8vw, 3.6rem); line-height: 1.1; margin-bottom: 1.25rem; }
-.hero h1 em { color: var(--pink); font-style: inherit; }
-.hero p { font-size: 0.95rem; color: var(--muted); line-height: 1.8; max-width: 480px; margin: 0 auto; }
-.divider { display: flex; align-items: center; gap: 1rem; font-size: 0.55rem; letter-spacing: 0.35em; text-transform: uppercase; color: rgba(255,255,255,0.22); margin: 2rem 0; }
-.divider::before, .divider::after { content: ''; flex: 1; height: 1px; background: rgba(255,45,107,0.18); }
-.pricing { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1px; background: rgba(255,45,107,0.15); border: 1px solid rgba(255,45,107,0.15); margin-bottom: 3rem; }
-.price-card { background: var(--card); padding: 2rem 1.25rem; text-align: center; position: relative; }
-.price-card.featured { background: var(--card2); }
-.price-card.featured::after { content: 'Popular'; position: absolute; top: -1px; left: 50%; transform: translateX(-50%); background: var(--pink); color: white; font-size: 0.52rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; padding: 3px 12px; }
-.price-type { font-size: 0.6rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.6rem; }
-.price-num { font-family: var(--serif); font-style: italic; font-size: 2.4rem; color: var(--pink); line-height: 1; margin-bottom: 0.5rem; }
-.price-desc { font-size: 0.74rem; color: var(--muted); line-height: 1.55; }
-.what { background: var(--card); border: 1px solid rgba(255,45,107,0.12); padding: 2.5rem; margin-bottom: 3rem; }
-.what-gem { font-size: 3rem; margin-bottom: 1.25rem; display: block; text-align: center; }
-.what h2 { font-family: var(--serif); font-style: italic; font-size: 1.6rem; margin-bottom: 1rem; text-align: center; }
-.what p { font-size: 0.88rem; color: var(--muted); line-height: 1.85; text-align: center; }
-.what p + p { margin-top: 0.85rem; }
-.press { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; margin-bottom: 3rem; }
-.press-pill { background: var(--card); border: 1px solid rgba(255,45,107,0.15); font-size: 0.62rem; letter-spacing: 0.12em; color: var(--muted); padding: 0.4rem 0.9rem; }
-.contact { background: var(--card); border: 1px solid rgba(255,45,107,0.15); padding: 2.5rem; margin-bottom: 3rem; text-align: center; }
-.contact h2 { font-family: var(--serif); font-style: italic; font-size: 1.8rem; margin-bottom: 0.4rem; }
-.contact h2 em { color: var(--pink); font-style: inherit; }
-.contact .sub { font-size: 0.8rem; color: var(--muted); margin-bottom: 2rem; line-height: 1.7; }
-.contact-rows { display: flex; flex-direction: column; gap: 0.85rem; }
-.c-row { display: flex; align-items: center; gap: 1rem; background: var(--card2); padding: 0.85rem 1.1rem; text-align: left; }
-.c-icon { width: 30px; height: 30px; border-radius: 50%; background: rgba(255,45,107,0.12); border: 1px solid rgba(255,45,107,0.28); display: flex; align-items: center; justify-content: center; font-size: 0.8rem; flex-shrink: 0; }
-.c-text { font-size: 0.84rem; color: rgba(255,255,255,0.72); }
-footer { border-top: 1px solid rgba(255,45,107,0.15); padding: 1.5rem 0 2rem; display: flex; justify-content: space-between; align-items: center; }
-footer p { font-size: 0.62rem; color: rgba(255,255,255,0.2); }
-.patent { font-size: 0.56rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--pink); border: 1px solid rgba(255,45,107,0.22); padding: 0.25rem 0.75rem; }
-</style>
-</head>
-<body>
-<div class="logo-bar"><div class="logo">Zip<em>sessory</em></div><div class="tagline">Zipper Jewellery</div></div>
-<div class="hero"><div class="hero-label">Patent Pending</div><h1>No More <em>Naked</em> Zippers.</h1><p>A simply brilliant jewellery pendant that lives on your zipper - adding sparkle to boots, bags, dresses and gowns. Handmade in Canada with Swarovski elements and sterling silver.</p></div>
-<div class="divider">Pricing</div>
-<div class="pricing"><div class="price-card"><div class="price-type">Single</div><div class="price-num">$15</div><div class="price-desc">One pendant. Perfect for boots, bags and jackets.</div></div><div class="price-card featured"><div class="price-type">Double</div><div class="price-num">$25</div><div class="price-desc">Two pendants. Mix and match any two items.</div></div><div class="price-card"><div class="price-type">Special Order</div><div class="price-num" style="font-size:1.8rem;">From $150</div><div class="price-desc">Custom designs for bridal, gowns and gifts.</div></div></div>
-<div class="what"><span class="what-gem">💎</span><h2>What is Zipsessory?</h2><p>Zipsessory is a jewellery pendant that clips onto any zipper pull, transforming an ordinary zipper into a sparkling style statement.</p><p>It also solves a real problem: the loop lets you reach a centre-back dress zipper without acrobatic contortions. Fashion and function.</p></div>
-<div class="divider">As Seen In</div>
-<div class="press"><div class="press-pill">Golden Globes Gift Bags</div><div class="press-pill">NAACP Image Awards</div><div class="press-pill">Hallmark Channel</div><div class="press-pill">CityLine</div><div class="press-pill">Marilyn Denis Show</div><div class="press-pill">National Examiner</div></div>
-<div class="contact"><h2>Get <em>in Touch</em></h2><p class="sub">Ready to order or want to know more? Shelley would love to hear from you.</p><div class="contact-rows"><div class="c-row"><div class="c-icon">📞</div><div class="c-text">905.467.5745</div></div><div class="c-row"><div class="c-icon">✉️</div><div class="c-text">shelley@zipsessory.com</div></div><div class="c-row"><div class="c-icon">🌐</div><div class="c-text">www.zipsessory.com</div></div></div></div>
-<footer><p>© 2025 Zipsessory. All rights reserved.</p><div class="patent">Patent Pending · Handmade in Canada</div></footer>
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Zipsessory</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
-<style>
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-:root { --pink: #FF2D6B; --black: #080808; --card: #141414; --card2: #1E1E1E; --white: #FFFFFF; --muted: rgba(255,255,255,0.52); --serif: 'Cormorant Garamond', Georgia, serif; --sans: 'Jost', sans-serif; }
+html { scroll-behavior: smooth; }
 body { background: var(--black); color: var(--white); font-family: var(--sans); font-weight: 300; max-width: 680px; margin: 0 auto; padding: 0 1.5rem; }
 .logo-bar { text-align: center; padding: 2.75rem 0 2rem; border-bottom: 1px solid rgba(255,45,107,0.18); }
 .logo { font-family: var(--serif); font-style: italic; font-weight: 300; font-size: 2.2rem; letter-spacing: 0.12em; }
